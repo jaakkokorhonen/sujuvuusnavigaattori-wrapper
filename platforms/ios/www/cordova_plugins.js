@@ -1,6 +1,13 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.geolocation/www/Coordinates.js",
         "id": "org.apache.cordova.geolocation.Coordinates",
         "clobbers": [
@@ -29,6 +36,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.plugin.power-management/www/PowerManagement.js",
+        "id": "org.apache.cordova.plugin.power-management.PowerManagement",
+        "clobbers": [
+            "window.powerManagement"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.statusbar/www/statusbar.js",
         "id": "org.apache.cordova.statusbar.statusbar",
         "clobbers": [
@@ -39,7 +53,9 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.geolocation": "0.3.10",
+    "org.apache.cordova.device": "0.2.12",
+    "org.apache.cordova.geolocation": "0.3.11-dev",
+    "org.apache.cordova.plugin.power-management": "0.1.0",
     "org.apache.cordova.statusbar": "0.1.8"
 }
 // BOTTOM OF METADATA
