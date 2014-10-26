@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.okfn.fi.sujuvuusnavigaattori" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sujuvuusnavigaattori</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="sujuvuusnavigaattori@groups.facebook.com" href="https://www.facebook.com/groups/sujuvuusnavigaattori/">
+        OKFN-FI
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <plugin name="org.apache.cordova.geolocation" />
+</widget>

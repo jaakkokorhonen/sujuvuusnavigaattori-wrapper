@@ -1,0 +1,6 @@
+syntax: glob
+*~
+.idea
+platforms/android/assets/www
+platforms/android/ant-build
+platforms/android/out
