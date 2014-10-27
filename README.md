@@ -11,7 +11,7 @@ It is assumed that you are somewhat familiar with NodeJS and git. You should hav
 1. Cordova can be installed following [Installing the Cordova CLI](http://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html#The%20Command-Line%20Interface_installing_the_cordova_cli) instructions in *The Command-Line Interface* chapter of the PhoneGap API Documentation.
 2. After installing Cordova you should open terminal / command line and move to directory where you want the Sujuvuusnavigaattori-wrapper to be put. In the directory where you moved clone the Sujuvuusnavigaattori-wrapper, i.e. run the `git clone` command. Then to clone the Sujuvuusnavigaattori sub project run `cd www`, `git submodule init`, and `git submodule update --remote www`.
 3. Now is good time to install platform tools. See [iOS specific](#iOSplat) or [Android specific](#androidplat) help.
-4. After platform tools are installed you can run on the sujuvuusnavigaattori-wrapper root directory, for example `cordova build ios` or `cordova build android`. Wether there was or wasn't any errors, you should see further info from the following section (Platform specific help)[#plathelp].
+4. After platform tools are installed you can run, for example `cordova build ios` or `cordova build android` at the sujuvuusnavigaattori-wrapper root directory. If there was any errors, ask help.
 
 <a name="plathelp" />
 ##Platform specific help
