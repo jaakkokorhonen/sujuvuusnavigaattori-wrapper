@@ -2,7 +2,7 @@ sujuvuusnavigaattori-wrapper
 ============================
 
 This project is for wrapping the [Sujuvuusnavigaattori](https://github.com/okffi/sujuvuusnavigaattori/) application
-inside a native application. [Corodova](http://cordova.apache.org/) also known as PhoneGap is used for this.
+inside a native application. [Cordova](http://cordova.apache.org/) also known as PhoneGap is used for this.
 
 ## Getting started
 
@@ -20,6 +20,7 @@ It is assumed that you are somewhat familiar with NodeJS and git. You should hav
 ### iOS Specific help
 
 Cordova has good general [iOS instructions](http://docs.phonegap.com/en/3.5.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide), so you should see them. It should be possible to run `cordova build ios` succesfully after following them. However, before creating application archive (.ipa) from Xcode, you should remember:
+
 1. Update the contents of the www directory to the latest version: `git submodule update --remote www`
 2. Run 'grunt` in the www directory.
 3. Run `cordova build ios` in the project root directory 
@@ -29,6 +30,7 @@ Cordova has good general [iOS instructions](http://docs.phonegap.com/en/3.5.0/gu
 ### Android Specific help
 
 Cordova has also [Android instructions](http://docs.phonegap.com/en/3.5.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide). Few notes for installing Android tools for Mac:
+
 1. Install Android Studio
 2. Run Android Studio, select Configure -> SDK Manager. Install from Tools: Android SDK Tools, Android SDK Platform-tools, Android SDK Build-tools (19.1 and above). Install from Android 4.4W: SDK Platform. From Android 4.4.2: SDK Platform and Google APIs and Sources fro Android SDK. From Extras: Android Support Repository and Android Support Library. 
 3. `export ANDROID_HOME="/Applications/Android Studio.app/sdk"`
