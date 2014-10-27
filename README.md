@@ -9,7 +9,7 @@ inside a native application. [Cordova](http://cordova.apache.org/) also known as
 It is assumed that you are somewhat familiar with NodeJS and git. You should have them installed before proceeding with these instructions. Also install grunt: `sudo npm install -g grunt-cli`.
 
 1. Cordova can be installed following [Installing the Cordova CLI](http://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html#The%20Command-Line%20Interface_installing_the_cordova_cli) instructions in *The Command-Line Interface* chapter of the PhoneGap API Documentation.
-2. After installing Cordova you should open terminal / command line and move to directory where you want the Sujuvuusnavigaattori-wrapper to be put. In the directory where you moved clone the Sujuvuusnavigaattori-wrapper, i.e. run the `git clone` command. Then to clone the Sujuvuusnavigaattori sub project run `cd www`, `git submodule init`, and `git submodule update --remote www`.
+2. After installing Cordova you should open terminal / command line and move to directory where you want the Sujuvuusnavigaattori-wrapper to be put. In the directory where you moved, clone the Sujuvuusnavigaattori-wrapper, i.e. run the `git clone` command. Then to clone the Sujuvuusnavigaattori sub project run `cd www`, `git submodule init`, and `git submodule update --remote www`.
 3. Now is good time to install platform tools. See [iOS specific](#iOSplat) or [Android specific](#androidplat) help.
 4. After platform tools are installed you can run, for example `cordova build ios` or `cordova build android` at the sujuvuusnavigaattori-wrapper root directory. If there was any errors, ask help.
 
@@ -36,3 +36,8 @@ Cordova has also [Android instructions](http://docs.phonegap.com/en/3.5.0/guide_
 3. `export ANDROID_HOME="/Applications/Android Studio.app/sdk"`
 4. [Install ant](http://www.nic.funet.fi/pub/mirrors/apache.org//ant/binaries/apache-ant-1.9.4-bin.zip)
 5. `export PATH=${PATH}:/Applications/apache-ant-1.9.4/bin`
+
+<a name="wp8plat" />
+### WP8 Specific help
+
+Your help needed...
