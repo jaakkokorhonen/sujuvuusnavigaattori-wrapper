@@ -11,7 +11,8 @@ It is assumed that you are somewhat familiar with NodeJS and git. You should hav
 1. Cordova can be installed following [Installing the Cordova CLI](http://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html#The%20Command-Line%20Interface_installing_the_cordova_cli) instructions in *The Command-Line Interface* chapter of the PhoneGap API Documentation.
 2. After installing Cordova you should open terminal / command line and move to directory where you want the Sujuvuusnavigaattori-wrapper to be put. In the directory where you moved, clone the Sujuvuusnavigaattori-wrapper, i.e. run the `git clone` command. Then to clone the Sujuvuusnavigaattori sub project run `cd www`, `git submodule init`, and `git submodule update --remote www`.
 3. Now is good time to install platform tools. See [iOS specific](#iOSplat) or [Android specific](#androidplat) help.
-4. After platform tools are installed you can run, for example `cordova build ios` or `cordova build android` at the sujuvuusnavigaattori-wrapper root directory. If there was any errors, ask help.
+4. After platform tools are installed you can run, for example `cordova build ios` or `cordova build android` at the sujuvuusnavigaattori-wrapper root directory. However, before runnning those build comands, always when needed, update the contents of the www directory to the latest version: run `git submodule update --remote www` in the project root directory and run `grunt` in the www directory.
+5. If there was any errors, ask help.
 
 <a name="plathelp" />
 ##Platform specific help
@@ -19,12 +20,10 @@ It is assumed that you are somewhat familiar with NodeJS and git. You should hav
 <a name="iOSplat" />
 ### iOS Specific help
 
-Cordova has good general [iOS instructions](http://docs.phonegap.com/en/3.5.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide), so you should see them. It should be possible to run `cordova build ios` succesfully after following them. However, before creating application archive (.ipa) from Xcode, you should remember:
+Cordova has good general [iOS instructions](http://docs.phonegap.com/en/3.5.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide), so you should see them. It should be possible to run `cordova build ios` succesfully after following them. However, before creating application archive (.ipa) from Xcode, you should:
 
-1. Update the contents of the www directory to the latest version: `git submodule update --remote www`
-2. Run 'grunt` in the www directory.
-3. Run `cordova build ios` in the project root directory 
-4. Delete the node_modules directory from the `sujuvuusnavigaattori-wrapper/platforms/ios/www` directory before opening the project in Xcode for archiving. Otherwise there may be validation error when trying to create archive. 
+1. Remember delete the node_modules and utils directory from the `sujuvuusnavigaattori-wrapper/platforms/ios/www` directory before opening the project in Xcode for archiving. Otherwise there may be validation error when trying to create archive.
+2. Make sure in Xcode that target version and build are correct (for example, 0.1.1).
 
 <a name="androidplat" />
 ### Android Specific help
